@@ -23,8 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"/>
+            android:layout_margin="20dp"
+            android:textSize="30sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +44,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
                 <View
                     android:id="@+id/view_2"
@@ -52,7 +53,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
                 <View
                     android:id="@+id/view_3"
@@ -60,7 +62,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
             </LinearLayout>
 
@@ -77,7 +80,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
                 <View
                     android:id="@+id/view_5"
@@ -85,7 +89,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
                 <View
                     android:id="@+id/view_6"
@@ -93,7 +98,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
             </LinearLayout>
 
@@ -109,7 +115,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
                 <View
                     android:id="@+id/view_8"
@@ -117,7 +124,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"/>
 
                 <View
                     android:id="@+id/view_9"
@@ -125,7 +133,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/black"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="3dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    />
 
             </LinearLayout>
 
@@ -135,7 +145,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3" />
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="다시하기"/>
+        </LinearLayout>
+
+
 
 
     </LinearLayout>
