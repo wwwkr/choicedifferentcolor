@@ -18,6 +18,7 @@ import kotlin.concurrent.timer
 class MainActivity : AppCompatActivity() {
 
 
+    var TAG = this.javaClass.name
 
     var colorRes : Int = 0
     val random = Random()
@@ -93,10 +94,12 @@ class MainActivity : AppCompatActivity() {
                 CoroutineScope(Dispatchers.Main).launch {
 
 
-                    Toast.makeText(this@MainActivity, "시간초과 되었습니다", Toast.LENGTH_SHORT).show()
 
+                    Log.e(TAG , " QQQQQQQQQQQQQQ")
                     timerTask.cancel()
+                    cancel()
                     binding.btnReset.isEnabled = true
+
 
                 }
             }
@@ -200,7 +203,6 @@ class MainActivity : AppCompatActivity() {
         for(view in views){
 
             view.setOnClickListener(null)
-            Log.e("CHECK",  Integer.toHexString(Color.GREEN).substring(2,8))
             if(rnd_num == index){
 
                 view.setBackgroundColor(diffColorRes)
