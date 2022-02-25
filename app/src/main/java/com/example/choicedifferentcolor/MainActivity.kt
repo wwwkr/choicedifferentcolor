@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     var rnd_num : Int = 0
 
-    var time = 0
+    var time = 31*100
 
     var isFinish : Boolean = false
     var isSuccese : Boolean = false
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun setting( ){
+    fun setting(){
 
         binding.btnReset.isEnabled = false
 

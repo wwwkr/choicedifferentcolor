@@ -17,8 +17,6 @@ class SplashActivity : AppCompatActivity() {
 
 
 
-        binding.loadingImage.playAnimation()
-
 
         CoroutineScope(Dispatchers.Main).launch {
 
