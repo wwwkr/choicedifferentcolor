@@ -85,6 +85,9 @@ class MainActivity : AppCompatActivity() {
 
             }
 
+
+
+
             if(time <= 0){
                 time = 0
 
@@ -165,39 +168,6 @@ class MainActivity : AppCompatActivity() {
             colorArr[0] = colorArr[0] + (difficulty-round)
         }
         var diffColorRes = createRndColor(colorArr[0], colorArr[1], colorArr[2], colorArr[3])
-//        var rnd_num2 = random.nextInt(2)
-//        when(rnd_num2){
-//
-//            0 -> {
-//                if(colorArr[0]+(50-round) >= 255){
-//                    colorArr[0] = colorArr[0] - (50-round)
-//                }else{
-//                    colorArr[0] = colorArr[0] + (50-round)
-//                }
-//                diffColorRes = createRndColor(colorArr[0], colorArr[1], colorArr[2], colorArr[3])
-//            }
-//            1 -> {
-//                if(colorArr[1]+(50-round) >= 255){
-//                    colorArr[1] = colorArr[1] - (50-round)
-//                }else{
-//                    colorArr[1] = colorArr[1] + (50-round)
-//                }
-//                diffColorRes = createRndColor(colorArr[0], colorArr[1], colorArr[2])
-//            }
-//            2 -> {
-//                if(colorArr[2]+(50-round) >= 255){
-//                    colorArr[2] = colorArr[2] - (50-round)
-//                }else{
-//                    colorArr[2] = colorArr[2] + (50-round)
-//                }
-//                diffColorRes = createRndColor(colorArr[0], colorArr[1], colorArr[2])
-//            }
-//        }
-
-
-
-
-
 
         var index = 0
         for(view in views){
